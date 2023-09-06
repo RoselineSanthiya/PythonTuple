@@ -1,1 +1,70 @@
+: x=tuple()
+
+In [2]: x=(45,87,'l','bee')
+
+In [3]: x
+Out[3]: (45, 87, 'l', 'bee')
+
+In [4]: len(x)
+Out[4]: 4
+
+In [5]: type(x)
+Out[5]: tuple
+
+In [6]: x.count('l')
+Out[6]: 1
+]: x.index(87)
+Out[8]: 1
+
+In [9]: x.index('bee')
+Out[9]: 3
+
+In [10]: x.index('l')
+Out[10]: 2
+
+In [11]: x.index(45)
+Out[11]: 0
+
+In [12]: x=('bee','tom','flower',5,7,11)
+
+In [13]: x
+Out[13]: ('bee', 'tom', 'flower', 5, 7, 11)
+
+In [14]: x.index(7)
+Out[14]: 4
+
+In [15]: x=('bee','tom','flower',5,7,11,'tom')
+
+In [16]: x.index('tom')
+Out[16]: 1
+
+In [17]: x.index('tom',2)
+Out[17]: 6
+
+In [18]: x.count('tom')
+Out[18]: 2
+: for i in x:
+    ...:     print(i)
+    ...:
+bee
+tom
+flower
+5
+7
+11
+tom
+: x[3]
+Out[27]: 5
+
+In [28]: x[2]
+Out[28]: 'flower'
+
+In [29]: len(x)
+Out[29]: 7
+
+In [30]: id(x)
+Out[30]: 1818651401888
+
+In [31]: type(x)
+Out[31]: tuple
 
